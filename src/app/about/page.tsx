@@ -1,8 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
-import { Award, Leaf, Sparkles, Star } from "lucide-react";
+import { Award, Leaf, Sparkles, Star, Instagram, Twitter, Facebook } from "lucide-react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
@@ -26,7 +25,7 @@ export default function AboutPage() {
         <NavbarLayoutFloatingInline
           navItems={[
             { name: "Collections", id: "/products" },
-            { name: "About", id: "about" },
+            { name: "About", id: "#about" },
             { name: "Style Guide", id: "/" },
             { name: "Reviews", id: "/testimonials" },
             { name: "Contact", id: "/contact" }
@@ -123,9 +122,9 @@ export default function AboutPage() {
             }
           ]}
           socialLinks={[
-            { icon: "Instagram", href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
-            { icon: "Twitter", href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
-            { icon: "Facebook", href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
+            { icon: Instagram, href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
+            { icon: Twitter, href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
+            { icon: Facebook, href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
           ]}
         />
       </div>

@@ -1,8 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag, Instagram, Twitter, Facebook } from "lucide-react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
@@ -24,7 +23,7 @@ export default function ProductsPage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           navItems={[
-            { name: "Collections", id: "products" },
+            { name: "Collections", id: "#products" },
             { name: "About", id: "/about" },
             { name: "Style Guide", id: "/" },
             { name: "Reviews", id: "/testimonials" },
@@ -113,9 +112,9 @@ export default function ProductsPage() {
             }
           ]}
           socialLinks={[
-            { icon: "Instagram", href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
-            { icon: "Twitter", href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
-            { icon: "Facebook", href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
+            { icon: Instagram, href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
+            { icon: Twitter, href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
+            { icon: Facebook, href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
           ]}
         />
       </div>

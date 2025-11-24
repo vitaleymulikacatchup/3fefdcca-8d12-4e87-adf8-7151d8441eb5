@@ -1,8 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, Instagram, Twitter, Facebook } from "lucide-react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
@@ -28,7 +27,7 @@ export default function ContactPage() {
             { name: "About", id: "/about" },
             { name: "Style Guide", id: "/" },
             { name: "Reviews", id: "/testimonials" },
-            { name: "Contact", id: "contact" }
+            { name: "Contact", id: "#contact" }
           ]}
           brandName="Stezhka"
           button={{
@@ -83,9 +82,9 @@ export default function ContactPage() {
             }
           ]}
           socialLinks={[
-            { icon: "Instagram", href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
-            { icon: "Twitter", href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
-            { icon: "Facebook", href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
+            { icon: Instagram, href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
+            { icon: Twitter, href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
+            { icon: Facebook, href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
           ]}
         />
       </div>

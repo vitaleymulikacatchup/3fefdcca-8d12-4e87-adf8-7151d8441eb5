@@ -1,8 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Instagram, Twitter, Facebook } from "lucide-react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import TestimonialCardThree from '@/components/sections/testimonial/TestimonialCardThree';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
@@ -27,7 +26,7 @@ export default function TestimonialsPage() {
             { name: "Collections", id: "/products" },
             { name: "About", id: "/about" },
             { name: "Style Guide", id: "/" },
-            { name: "Reviews", id: "testimonials" },
+            { name: "Reviews", id: "#testimonials" },
             { name: "Contact", id: "/contact" }
           ]}
           brandName="Stezhka"
@@ -116,9 +115,9 @@ export default function TestimonialsPage() {
             }
           ]}
           socialLinks={[
-            { icon: "Instagram", href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
-            { icon: "Twitter", href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
-            { icon: "Facebook", href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
+            { icon: Instagram, href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
+            { icon: Twitter, href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
+            { icon: Facebook, href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
           ]}
         />
       </div>

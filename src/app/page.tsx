@@ -1,8 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
-import { Award, Leaf, MessageCircle, ShoppingBag, Sparkles, Star, Zap } from "lucide-react";
+import { Zap, ShoppingBag, MessageCircle } from "lucide-react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import FeatureCardNine from '@/components/sections/feature/FeatureCardNine';
@@ -25,9 +24,9 @@ export default function HomePage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           navItems={[
-            { name: "Collections", id: "products" },
+            { name: "Collections", id: "/products" },
             { name: "About", id: "/about" },
-            { name: "Style Guide", id: "features" },
+            { name: "Style Guide", id: "#features" },
             { name: "Reviews", id: "/testimonials" },
             { name: "Contact", id: "/contact" }
           ]}
@@ -136,11 +135,6 @@ export default function HomePage() {
                 { label: "Contact", href: "/contact" }
               ]
             }
-          ]}
-          socialLinks={[
-            { icon: "Instagram", href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
-            { icon: "Twitter", href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
-            { icon: "Facebook", href: "https://facebook.com", ariaLabel: "Follow us on Facebook" }
           ]}
         />
       </div>
