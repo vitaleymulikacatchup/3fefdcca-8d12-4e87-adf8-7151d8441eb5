@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { MessageCircle, Instagram, Twitter, Facebook } from "lucide-react";
+import Link from "next/link";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import TestimonialCardThree from '@/components/sections/testimonial/TestimonialCardThree';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
@@ -84,7 +85,6 @@ export default function TestimonialsPage() {
 
       <div id="footer" data-section="footer">
         <FooterSocial
-          brandName="Stezhka"
           copyrightText="© 2025 Stezhka. All rights reserved."
           columns={[
             {
@@ -108,8 +108,8 @@ export default function TestimonialsPage() {
               title: "Support",
               items: [
                 { label: "Size Guide", href: "/" },
-                { label: "Shipping", href: "#contact" },
-                { label: "Returns", href: "#contact" },
+                { label: "Shipping", href: "/contact" },
+                { label: "Returns", href: "/contact" },
                 { label: "Contact", href: "/contact" }
               ]
             }

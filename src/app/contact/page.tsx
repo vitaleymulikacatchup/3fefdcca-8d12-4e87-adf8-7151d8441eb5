@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { Mail, Instagram, Twitter, Facebook } from "lucide-react";
+import Link from "next/link";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
@@ -51,7 +52,6 @@ export default function ContactPage() {
 
       <div id="footer" data-section="footer">
         <FooterSocial
-          brandName="Stezhka"
           copyrightText="© 2025 Stezhka. All rights reserved."
           columns={[
             {

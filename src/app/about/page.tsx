@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import { Award, Leaf, Sparkles, Star, Instagram, Twitter, Facebook } from "lucide-react";
+import Link from "next/link";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
@@ -91,7 +92,6 @@ export default function AboutPage() {
 
       <div id="footer" data-section="footer">
         <FooterSocial
-          brandName="Stezhka"
           copyrightText="© 2025 Stezhka. All rights reserved."
           columns={[
             {

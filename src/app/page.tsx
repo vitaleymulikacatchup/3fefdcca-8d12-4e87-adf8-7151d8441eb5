@@ -1,7 +1,8 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import { Zap, ShoppingBag, MessageCircle } from "lucide-react";
+import { Zap } from "lucide-react";
+import Link from "next/link";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import FeatureCardNine from '@/components/sections/feature/FeatureCardNine';
@@ -106,7 +107,6 @@ export default function HomePage() {
 
       <div id="footer" data-section="footer">
         <FooterSocial
-          brandName="Stezhka"
           copyrightText="© 2025 Stezhka. All rights reserved."
           columns={[
             {
@@ -129,7 +129,7 @@ export default function HomePage() {
             {
               title: "Support",
               items: [
-                { label: "Size Guide", href: "#features" },
+                { label: "Size Guide", href: "/" },
                 { label: "Shipping", href: "/contact" },
                 { label: "Returns", href: "/contact" },
                 { label: "Contact", href: "/contact" }
